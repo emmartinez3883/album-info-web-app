@@ -10,7 +10,7 @@
         <h1>Album Info Web App</h1>
         <p> Enter an artist and album name to retrieve info from music data API</p>
         <input type="text" name="artistname" id="artistname" placeholder="Artist name..." /><br />
-        <input type="text" name="albumname" id="albumname" placeholder="Album name..." /><br /><br />
+        <input type="text" name="albumname" id="albumname" placeholder="Album name..." /><br />
         <a href="#" id="ghsubmitbtn">Fetch Album Info</a>
         <div id="ghapidata" class="clearfix"></div>
     </div>
@@ -43,12 +43,12 @@
                         outhtml = outhtml + '<div class="ghcontent"><div class="avi"><a href"' + albumurl + '" target="_blank"><img src="' + image
                             + '" width="200px" height="200px" alt="' + album + '"></a><br />' + wiki + '</div>';
                         outhtml = outhtml + '<p><b>Listeners:</b> ' + listeners + '<br /><b>Play Count:</b> ' + plays + '</p></div>';
-                        outhtml = outhtml + '<div class="repolist clearfix">';
+                        outhtml = outhtml + '<div class="tracklist clearfix">';
 
                         if (tracks.length == 0) { outhtml = outhtml + '<p>Album tracks not available!</p></div>'; }
                         else
                         {
-                            outhtml = outhtml + '<p><strong>Track List:</strong</p> <ul>';
+                            outhtml = outhtml + '<p><b>Track List:</b></p> <ul>';
                             $.each(tracks, function (index) {
                                 outhtml = outhtml + '<li>' + tracks[index]['name'] + '</li>';
                             });

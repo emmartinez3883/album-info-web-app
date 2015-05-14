@@ -121,18 +121,18 @@ a:hover {
   padding: 3px;
 }
 
-.repolist {
+.tracklist {
   display: block;
   clear: both;
   width: 100%;
 }
-.repolist ul {
+.tracklist ul {
   font-size: 1.2em;
 }
-.repolist ul li {
+.tracklist ul li {
   display: block;
 }
-.repolist ul li a {
+.tracklist ul li a {
   font-weight: bold;
   padding: 6px 9px;
   display: block;
@@ -153,7 +153,7 @@ a:hover {
   background-image: -o-linear-gradient(top, #5597d8, #3673af);
   background-image: linear-gradient(top, #5597d8, #3673af);
 }
-.repolist ul li a:hover {
+.tracklist ul li a:hover {
   background-color: #396895;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#4b87c2), to(#396895));
   background-image: -webkit-linear-gradient(top, #4b87c2, #396895);
@@ -162,19 +162,19 @@ a:hover {
   background-image: -o-linear-gradient(top, #4b87c2, #396895);
   background-image: linear-gradient(top, #4b87c2, #396895);
 }
-.repolist ul li a:active {
+.tracklist ul li a:active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.25);
   -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,0.25);
   box-shadow: inset 0 3px 5px rgba(0,0,0,0.25);
 }
 
-.repolist ul li a span {
+.tracklist ul li a span {
   font-family: "Courier New", Courier, "Lucida Typewriter", monospace;
   font-size: 0.9em;
 }
 
 /* input field */
-#ghusername {
+#artistname, #albumname {
   display: block;
   padding: 5px 8px;
   font-size: 1.4em;
