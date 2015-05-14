@@ -11,7 +11,7 @@
         <p> Enter an artist and album name to retrieve info from music data API</p>
         <input type="text" name="artistname" id="artistname" placeholder="Artist name..." /><br />
         <input type="text" name="albumname" id="albumname" placeholder="Album name..." /><br />
-        <a href="#" id="ghsubmitbtn">Fetch Album Info</a>
+        <a href="#" id="ghsubmitbtn">Fetch Album Info</a><a href="#" id="ghclearbtn">Clear</a>
         <div id="ghapidata" class="clearfix"></div>
     </div>
     <script type="text/javascript">
@@ -68,6 +68,12 @@
                     }
                 });
             }
+
+            $('#ghclearbtn').click(function () {
+                $('#artistname').val('');
+                $('#albumname').val('');
+                $('#ghapidata').html('');
+            })
         });
 
     </script>
